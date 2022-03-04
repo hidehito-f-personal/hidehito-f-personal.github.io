@@ -4,3 +4,4 @@ languageCode = 'ja-jp'
 title = 'Wiki'
 
 theme = "docdock"
+publishDir = "docs"

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>1.3 Realize on Wiki</title>
+    <link>https://hidehito-f-personal.github.io/devops/realize/</link>
+    <description>Recent content in 1.3 Realize on Wiki</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Sat, 19 Feb 2022 19:11:50 +0900</lastBuildDate>
+    
+	<atom:link href="https://hidehito-f-personal.github.io/devops/realize/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>1.3.2 Tools</title>
+      <link>https://hidehito-f-personal.github.io/devops/realize/tools/</link>
+      <pubDate>Sat, 19 Feb 2022 19:09:46 +0900</pubDate>
+      
+      <guid>https://hidehito-f-personal.github.io/devops/realize/tools/</guid>
+      <description>DevOpsを実現するツールについて  DevOpsを実現するために様々なツールが使われている（DevOps導入指南より）  バックログ管理：redmine, JIRA メトリクス収集：zabbix chat（アジャイル開発などで重要）: slack CI/CD: circleCI, jenkins コード管理：GitLab, GitHub    他ページへのリンク DevOpsの起源についてはこちら からアクセスしてください</description>
+    </item>
+    
+  </channel>
+</rss>

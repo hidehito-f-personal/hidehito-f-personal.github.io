@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title >Wiki</title>
+    
+      <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="revised" content="2022-03-04T11:47:04 JST">
+<title>1.2 Whats_DevOps :: Wiki</title>
+<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+<link href="/css/nucleus.css" rel="stylesheet">
+<link href="/css/font-awesome.min.css" rel="stylesheet">
+<link href="/css/featherlight.min.css" rel="stylesheet">
+<link href="/css/auto-complete.css" rel="stylesheet">
+<link href="/theme-flex/style.css" rel="stylesheet">
+
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<meta name="description" content="">
+
+
+
+    
+  </head>
+  <body data-url="/devops/whats_devops/">
+    
+      <header>
+  <div class="logo">
+    
+	
+  
+    <a class="baselink" href="https://hidehito-f-personal.github.io/">Wiki</a>
+  
+
+
+  </div>
+  <div class="burger"><a href="javascript:void(0);" style="font-size:15px;">&#9776;</a></div>
+</header>
+<article>
+  <aside>
+    <ul class="menu">
+          <li data-nav-id="/" class="dd-item">
+          <a href="/">
+            <i class="fa fa-fw fa-home"></i>
+          </a>
+          </li>
+    <li data-nav-id="https://hidehito-f-personal.github.io/devops/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/devops/">1章 DevOps</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="https://hidehito-f-personal.github.io/devops/origin/" class="dd-item">
+        <div>
+          <a href="/devops/origin/">
+            1.1 Origin
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="https://hidehito-f-personal.github.io/devops/whats_devops/" class="dd-item">
+        <div>
+          <a href="/devops/whats_devops/">
+            1.2 Whats_DevOps
+          </a>
+        </div>
+    </li>
+    <li data-nav-id="https://hidehito-f-personal.github.io/devops/realize/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/devops/realize/">1.3 Realize</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="https://hidehito-f-personal.github.io/devops/realize/tools/" class="dd-item">
+        <div>
+          <a href="/devops/realize/tools/">
+            1.3.2 Tools
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+
+
+
+
+    </ul>
+    <section>
+    </section>
+  </aside>
+  <section class="page">
+    
+    <div class="nav-select">
+      <center>Navigation : 
+        <select onchange="javascript:location.href = this.value;">
+          
+    <option value="/devops/" >
+   1章 DevOps</option> 
+      <option value="/devops/origin/" >- 1.1 Origin</option>
+      <option value="/devops/whats_devops/"  selected>- 1.2 Whats_DevOps</option>
+    <option value="/devops/realize/" >
+  - 
+   1.3 Realize</option>
+  
+
+
+
+        </select>
+      </center>
+    </div>
+      <div>
+        <div class="searchbox">
+          <input data-search-input id="search-by" type="text" placeholder="Search...">
+        </div>
+      </div>
+    
+
+    <h1>1.2 Whats_DevOps</h1>
+    
+    
+    
+    <h2 id="heading">概説</h2>
+<p>一言でいうと：<!-- raw HTML omitted -->開発部門と運用部門が密に連携し、様々な手法と文化を取り入れて商品やサービスへの改善にかかる時間を短縮し、迅速にビジネスニーズに答えること<!-- raw HTML omitted --></p>
+<pre><code>→ツールと文化の２つの側面がある（以下に説明あり）
+</code></pre>
+<p>（一つ目は歴史的な観点も加えつつ）</p>
+<ul>
+<li>
+<p>DevOpsとは <strong>「開発チーム（Development）と運用チーム（Operations）がお互いに協調し合うことで開発・運用するソフトウェア／システムによってビジネスの価値をより高めるだけでなく、そのビジネスの価値をより確実かつ迅速にエンドユーザーに届け続ける」</strong> という概念</p>
+<ul>
+<li>
+<p>「DevOps」という言葉は2009年に行われたFlickrのエンジニアによるセッション、「10+ Deploys Per Day: Dev and Ops Cooperation at Flickr」（オライリー主催「Velocity 2009」）の中で初めて登場し、注目されるようになりました。</p>
+</li>
+<li>
+<p>Devの役割が“システムに新しい機能を追加する”である一方、Opsの役割は“システムの安定稼働”である。そのため、Devが新しい機能を追加したくても、Opsはシステムの安定稼働のために変更を加えたがらない、という対立構造が作られてしまっていた。</p>
+</li>
+<li>
+<p>DevもOpsもそのビジネスの価値をより確実かつ迅速にエンドユーザーに届け続けることが最重要。そのミッションを達成するための手段が、Devは“システムに新しい機能を追加する”であり、Opsは“システムの安定稼働”なのである。つまり、同じ「ミッション」を掲げているにもかかわらず、それぞれの「手段」が対立しているために、お互いのミッション達成に悪影響を与えてしまっている</p>
+</li>
+</ul>
+<p><img src="/attachment/60e1de8a68b8c0006c921a59" alt="devops1.png"></p>
+<p>以上の点を踏まえて、ツールと組織文化の観点から改善点をいくつか挙げた。</p>
+</li>
+</ul>
+<p>以下、<strong>ツール</strong>の観点</p>
+<blockquote>
+<ol>
+<li>自動化されたインフラストラクチャ（Automated infrastructure）： <!-- raw HTML omitted -->
+インフラの構築を自動化する。よく使われているツールにはAnsibleやChef、Dockerなどがある<!-- raw HTML omitted --><!-- raw HTML omitted --></li>
+<li>バージョン管理システムの共有（Shared version control）： <!-- raw HTML omitted -->
+GitやMercurialなどの同じバージョン管理システムをDevとOpsで共有する<!-- raw HTML omitted --><!-- raw HTML omitted --></li>
+<li>ワンステップによるビルドとデプロイ（One step build and deploy）： <!-- raw HTML omitted -->
+手順書などを使い、手動でビルドやデプロイをするのではなく、ビルドやデプロイを自動化する。よく使われているツールやサービスにはJenkinsやCapistranoなどがある<!-- raw HTML omitted --><!-- raw HTML omitted --></li>
+<li>フィーチャーフラグ（Feature flags）：  <!-- raw HTML omitted -->
+詳細は後述のコラムで説明。コード中の機能の有効／無効を設定ファイルで管理する<!-- raw HTML omitted --><!-- raw HTML omitted --></li>
+<li>メトリクスの共有（Shared metrics） ： <!-- raw HTML omitted -->
+取得したメトリクスの結果をダッシュボードでお互いに共有する。よく使われているサービスにはNew RelicやApplication Insightsなどがある<!-- raw HTML omitted --><!-- raw HTML omitted --></li>
+<li>IRCとインスタントメッセンジャーのBot（IRC and IM robots）： <!-- raw HTML omitted -->
+SlackやHipChatなどのチャットツールに自動的にビルドやデプロイのログ、アラート内容を投稿する仕組みを作ることで情報をお互いに共有する</li>
+</ol>
+</blockquote>
+<p>以下、<strong>組織文化</strong>の観点</p>
+<blockquote>
+<ol>
+<li>お互いを尊重する（Respect）： 一緒に働く相手のことを心から思いやる、相手を一人の人間として扱い、能力や功績を評価する</li>
+<li>お互いを信頼する（Trust）： 自分以外の人は優秀で、正しいことをすると信じる。信じて仕事を任せる</li>
+<li>失敗に対して健全な態度を取る（Healthy attitude about failure）： 新しいことに挑戦すれば自ずと失敗は起こってしまうもの。失敗は起こるものであり、相手のミスだと責めるものではない</li>
+<li>相手を非難しない（Avoiding Blame）： 相手に非があると断じて言葉で責めるのではなく、次に同じ問題が起こらないように建設的な批判を行う</li>
+</ol>
+</blockquote>
+<p>DevOpsといわれているが、<!-- raw HTML omitted --><strong>このような改善活動のことをDevOpsと呼び始めらしい</strong><!-- raw HTML omitted --></p>
+<p>参考：https://www.buildinsider.net/enterprise/devops/01</p>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted -->
+（二つ目はそのメリットの良さの観点から）</p>
+<ul>
+<li>
+<p>開発手法やツールを使って 開発者（Development）と運用者（Operations）が密接に連携することで、 より柔軟かつスピーディーに システムを開発すること</p>
+<ul>
+<li>
+<p><!-- raw HTML omitted --><strong>DevOpsによって信頼性が向上する。<strong><!-- raw HTML omitted --> <!-- raw HTML omitted -->
+→　開発者のミッションは「システムに新しい機能を追加すること」ですが、一方で運用者のミッションは 「システムを安定稼働させること」です。安定稼働しているシステムは変更を加えなければ問題なく動き続けるため、運用者はシステムの変更を嫌います。<!-- raw HTML omitted -->
+→　DevOpsのおかげで</strong>テスト、ビルド、デプロイといった今まで人間が行なっていた作業を自動化することで ヒューマンエラーを防ぐことができます。 信頼性を高めることで運用者もシステムの変更を承認しやすく</strong>なります。<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->なるほど、開発者が変更したいときにテスト～デプロイを自動化してヒューマンエラーをなくすことで信頼性を向上させて運用者にシステム変更における信頼性を担保している。<!-- raw HTML omitted --></p>
+</li>
+<li>
+<p><!-- raw HTML omitted -->**DevOpsによって生産性が向上する。**<!-- raw HTML omitted --><!-- raw HTML omitted -->
+→ 従来手法では</p>
+<ul>
+<li>他メンバーの修正を上書きして消してしまう</li>
+<li>本番環境では動かない</li>
+<li>リリースが複雑で手順書が必要となる</li>
+<li>別名フォルダでブランチを管理している</li>
+<li>ステータス管理ができない</li>
+<li>管理台帳の一覧性、検索性が弱い <!-- raw HTML omitted -->
+などの問題点があった。<!-- raw HTML omitted -->
+→　DevOpsを導入すると、多様なツールを使うことで、<strong>今まで煩雑であった作業の生産性を飛躍的に向上させることができます。</strong>　何でもかんでもExcelで管理する煩わしい作業から脱却できます。 Excelは「表計算」ソフトです。</li>
+</ul>
+</li>
+<li>
+<p><!-- raw HTML omitted -->**DevOpsによってアジリティ（俊敏性）が向上する。**<!-- raw HTML omitted --> <!-- raw HTML omitted -->
+→ 　従来手法ではウォーターフォールモデルのようにプロジェクトが終わるまでリリースされない 「ビッグバンリリース形態」であるため、システムを構築すること自体が目的になり、 要求変更に弱いシステムになりがち<!-- raw HTML omitted -->
+→　<strong>アジャイル開発を代表とする非ウォーターフォールモデルの開発手法を採用</strong>することにより、 より柔軟に、よりスピーディーに 開発することができます。
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->DevOpsはアジャイル開発によく採用される手法らしい（アジャイルはスピードが求められる開発→単純作業等の自動化が欠かせない）。けど、DevOpsは必ずアジャイルというわけでもないっぽい？<!-- raw HTML omitted --></p>
+</li>
+</ul>
+</li>
+</ul>
+<p>参考：https://qiita.com/bremen/items/44c3de10413f45f9f41e</p>
+
+
+    
+    
+        <div class="chevrons">
+    <div id="navigation">
+<a class="nav nav-prev" href="/devops/origin/" title="1.1 Origin"> <i class="fa fa-chevron-left"></i><label>1.1 Origin</label></a>
+    <a class="nav nav-next" href="/devops/realize/" title="1.3 Realize" style="margin-right: 0px;"><label>1.3 Realize</label><i class="fa fa-chevron-right"></i></a></div>
+  </div>
+
+  </section>
+</article>
+
+<footer>
+
+<div class="footline">
+    
+
+    
+
+    
+    <div class="date">
+        <i class='fa fa-calendar'></i> Last update on 19/02/2022
+    </div>
+    
+
+    
+  </div>
+
+
+	<div>
+
+
+  
+    Create a content/_footer.md file to customize the footer content
+  
+
+
+
+	</div>
+</footer>
+
+<script src="/js/jquery-2.x.min.js"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/hidehito-f-personal.github.io\/";
+    
+</script>
+<script src="/js/clipboard.min.js"></script>
+<script src="/js/featherlight.min.js"></script>
+
+<script type="text/javascript" src="/js/lunr.min.js"></script>
+<script type="text/javascript" src="/js/auto-complete.js"></script>
+<script type="text/javascript" src="/js/search.js"></script>
+<script src="/theme-flex/script.js"></script>
+
+
+
+
+<script src="https://hidehito-f-personal.github.io/js/scripts.min.js"></script>
+    
+
+    
+    
+
+    
+  </body>
+</html>
