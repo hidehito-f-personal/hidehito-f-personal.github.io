@@ -1,5 +1,5 @@
 
-baseURL = 'http://localhost:1313/'
+baseURL = 'https://hidehito-f-personal.github.io/'
 languageCode = 'ja-jp'
 title = 'Wiki'
 
