@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>1章 DevOps on Wiki</title>
+    <link>http://localhost:1313/devops/</link>
+    <description>Recent content in 1章 DevOps on Wiki</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Sat, 19 Feb 2022 18:42:10 +0900</lastBuildDate><atom:link href="http://localhost:1313/devops/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>1.1 Origin</title>
+      <link>http://localhost:1313/devops/origin/</link>
+      <pubDate>Sat, 19 Feb 2022 18:40:39 +0900</pubDate>
+      
+      <guid>http://localhost:1313/devops/origin/</guid>
+      <description>そもそも問題だったのは？  企業におけるIT部門の開発と運用の間に溝が生じていた  開発はビジネスのためにサービスに変化を加える 運用は喧嘩を嫌い、安定稼働を望む 上記の溝が従来の運用方法の問題   アジャイル開発が確立してきて、継続的な開発を行う上で浮き彫りになった問題を解決するためにDevOpsが生まれた（らしい）  解決策は？   1の問題点に対して
+ 開発と運用が密に連携することが必要 様々な手法と文化を取り入れて商品やサービスへの改善にかかる時間を短縮する（迅速にビジネスニーズに応えられるようにする）ことが必要 情報や技術の複雑性、専門性を削減する    2の問題点に関して
+ IaCとしてインフラをソフトウェアの知見で制御するようになった（DevOps） 迅速にビジネスニーズにこたえることを追い求めた結果、DevOpsが産まれた    結論   専門性と複雑性の排除、情報の見える化
+ 同じ情報に基づいて動く→開発・運用の密な連携 密な連携による迅速なニーズへの対応→目的達成    根本的な考え方として以下がある
+ 開発部門と運用部門が密に連携し、様々な手法と文化を取り入れ商品やサービスへの改善にかかる時間を短縮し、迅速にビジネスニーズにこたえることが重要    </description>
+    </item>
+    
+    <item>
+      <title>1.2 Whats_DevOps</title>
+      <link>http://localhost:1313/devops/whats_devops/</link>
+      <pubDate>Sat, 19 Feb 2022 18:50:38 +0900</pubDate>
+      
+      <guid>http://localhost:1313/devops/whats_devops/</guid>
+      <description>概説 一言でいうと：開発部門と運用部門が密に連携し、様々な手法と文化を取り入れて商品やサービスへの改善にかかる時間を短縮し、迅速にビジネスニーズに答えること→ツールと文化の２つの側面がある（以下に説明あり）  （一つ目は歴史的な観点も加えつつ）
+  DevOpsとは 「開発チーム（Development）と運用チーム（Operations）がお互いに協調し合うことで開発・運用するソフトウェア／システムによってビジネスの価値をより高めるだけでなく、そのビジネスの価値をより確実かつ迅速にエンドユーザーに届け続ける」 という概念
+  「DevOps」という言葉は2009年に行われたFlickrのエンジニアによるセッション、「10+ Deploys Per Day: Dev and Ops Cooperation at Flickr」（オライリー主催「Velocity 2009」）の中で初めて登場し、注目されるようになりました。
+  Devの役割が“システムに新しい機能を追加する”である一方、Opsの役割は“システムの安定稼働”である。そのため、Devが新しい機能を追加したくても、Opsはシステムの安定稼働のために変更を加えたがらない、という対立構造が作られてしまっていた。
+  DevもOpsもそのビジネスの価値をより確実かつ迅速にエンドユーザーに届け続けることが最重要。そのミッションを達成するための手段が、Devは“システムに新しい機能を追加する”であり、Opsは“システムの安定稼働”なのである。つまり、同じ「ミッション」を掲げているにもかかわらず、それぞれの「手段」が対立しているために、お互いのミッション達成に悪影響を与えてしまっている
+  以上の点を踏まえて、ツールと組織文化の観点から改善点をいくつか挙げた。
+  以下、ツールの観点
+  自動化されたインフラストラクチャ（Automated infrastructure）： インフラの構築を自動化する。よく使われているツールにはAnsibleやChef、Dockerなどがある バージョン管理システムの共有（Shared version control）： GitやMercurialなどの同じバージョン管理システムをDevとOpsで共有する ワンステップによるビルドとデプロイ（One step build and deploy）： 手順書などを使い、手動でビルドやデプロイをするのではなく、ビルドやデプロイを自動化する。よく使われているツールやサービスにはJenkinsやCapistranoなどがある フィーチャーフラグ（Feature flags）： 詳細は後述のコラムで説明。コード中の機能の有効／無効を設定ファイルで管理する メトリクスの共有（Shared metrics） ： 取得したメトリクスの結果をダッシュボードでお互いに共有する。よく使われているサービスにはNew RelicやApplication Insightsなどがある IRCとインスタントメッセンジャーのBot（IRC and IM robots）： SlackやHipChatなどのチャットツールに自動的にビルドやデプロイのログ、アラート内容を投稿する仕組みを作ることで情報をお互いに共有する   以下、組織文化の観点
+  お互いを尊重する（Respect）： 一緒に働く相手のことを心から思いやる、相手を一人の人間として扱い、能力や功績を評価する お互いを信頼する（Trust）： 自分以外の人は優秀で、正しいことをすると信じる。信じて仕事を任せる 失敗に対して健全な態度を取る（Healthy attitude about failure）： 新しいことに挑戦すれば自ずと失敗は起こってしまうもの。失敗は起こるものであり、相手のミスだと責めるものではない 相手を非難しない（Avoiding Blame）： 相手に非があると断じて言葉で責めるのではなく、次に同じ問題が起こらないように建設的な批判を行う   DevOpsといわれているが、このような改善活動のことをDevOpsと呼び始めらしい参考：https://www.</description>
+    </item>
+    
+  </channel>
+</rss>
