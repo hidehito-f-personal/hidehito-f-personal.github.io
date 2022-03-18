@@ -1,43 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
-  <url>
-    <loc>https://hidehito-f-personal.github.io/devops/origin/</loc>
-    <lastmod>2022-02-19T18:40:39+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://hidehito-f-personal.github.io/devops/whats_devops/</loc>
-    <lastmod>2022-02-19T18:50:38+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://hidehito-f-personal.github.io/devops/realize/</loc>
-    <lastmod>2022-02-19T19:11:50+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://hidehito-f-personal.github.io/devops/realize/tools/</loc>
-    <lastmod>2022-02-19T19:09:46+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://hidehito-f-personal.github.io/devops/</loc>
-    <lastmod>2022-02-19T18:42:10+09:00</lastmod>
-  </url>
-  
   <url>
     <loc>https://hidehito-f-personal.github.io/</loc>
     <lastmod>2017-09-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://hidehito-f-personal.github.io/categories/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://hidehito-f-personal.github.io/tags/</loc>
   </url>
-  
 </urlset>
