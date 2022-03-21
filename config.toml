@@ -1,0 +1,8 @@
+
+baseURL = 'https://hidehito-f-personal.github.io/'
+languageCode = 'ja-jp'
+title = 'Wiki'
+canonifyurls = true
+
+theme = "docdock"
+publishDir = "docs"
